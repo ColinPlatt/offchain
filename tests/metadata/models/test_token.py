@@ -25,5 +25,5 @@ class TestToken:
             Token(
                 collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8",
                 token_id=9559,
-                chain_identifier="aETHEREUM-MAINNETa",
+                chain_identifier="aCANTO-MAINNETa",
             )

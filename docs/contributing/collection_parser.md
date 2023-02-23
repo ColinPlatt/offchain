@@ -74,7 +74,7 @@ Let's use this ENS NFT as an example:
 
 ```python
 Token(
-    chain_identifier="ETHEREUM-MAINNET",
+    chain_identifier="CANTO-MAINNET",
     collection_address="0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
     token_id=10110056301157368922112380646085332716736091604887080310048917803187113883396,
 )
@@ -307,7 +307,7 @@ class ENSParser(CollectionParser):
 get_token_metadata(
     collection_address="0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
     token_id=10110056301157368922112380646085332716736091604887080310048917803187113883396,
-    chain_identifier="ETHEREUM-MAINNET"
+    chain_identifier="CANTO-MAINNET"
 )
 ```
 
@@ -353,7 +353,7 @@ from offchain.metadata.models.token import Token
 
 pipeline = MetadataPipeline()
 token = Token(
-    chain_identifier="ETHEREUM-MAINNET",
+    chain_identifier="CANTO-MAINNET",
     collection_address="0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
     token_id=10110056301157368922112380646085332716736091604887080310048917803187113883396,
 )
@@ -367,7 +367,7 @@ Metadata(
     token=Token(
         collection_address='0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85'
         token_id=10110056301157368922112380646085332716736091604887080310048917803187113883396,
-        chain_identifier='ETHEREUM-MAINNET',
+        chain_identifier='CANTO-MAINNET',
         uri='https://metadata.ens.domains/mainnet/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/10110056301157368922112380646085332716736091604887080310048917803187113883396/'
     ),
     raw_data={

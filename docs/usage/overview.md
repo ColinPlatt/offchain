@@ -46,7 +46,7 @@ The `Token` interface is how the metadata pipeline uniquely identifies an NFT. A
 
 - `collection_address`: The token's contract address.
 - `token_id`: The unique identifier for a token within a collection.
-- `chain_identifier`: The network and chain for the token. Defaults to "ETHEREUM-MAINNET" if nothing is passed in.
+- `chain_identifier`: The network and chain for the token. Defaults to "CANTO-MAINNET" if nothing is passed in.
 - `uri`: The url where the metadata information lives. Defaults to fetching from the contract directly if nothing is passed in.
 
 Example of token `9559` from `CryptoCoven` on Ethereum Mainnet:
@@ -57,7 +57,7 @@ from offchain import Token
 Token(
     collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8", #Required
     token_id=9559, #Required
-    chain_identifier="ETHEREUM-MAINNET", # Optional, defaults to Ethereum Mainnet
+    chain_identifier="CANTO-MAINNET", # Optional, defaults to Ethereum Mainnet
     uri:"ipfs://QmaXzZhcYnsisuue5WRdQDH6FDvqkLQX1NckLqBYeYYEfm/9559.json" # Optional, defaults to requesting the URI from the contract directly
 )
 ```

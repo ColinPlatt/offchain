@@ -17,7 +17,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestENSParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
         token_id=10110056301157368922112380646085332716736091604887080310048917803187113883396,
     )
@@ -74,7 +74,7 @@ class TestENSParser:
         metadata = parser.parse_metadata(token=self.token, raw_data=None)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85",
                 token_id=10110056301157368922112380646085332716736091604887080310048917803187113883396,
                 uri="https://metadata.ens.domains/mainnet/0x57f1887a8bf19b14fc0df6fd9b2acc9af147ea85/10110056301157368922112380646085332716736091604887080310048917803187113883396/",

@@ -16,7 +16,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestSuperRareParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0xb932a70a57673d89f4acffbe830e8ed7f75fb9e0",
         token_id=8724,
         uri="https://ipfs.pixura.io/ipfs/QmRhDdj22ZkcrHzaxTixew8k9uNC6kpum6SDeWmDgPMqRX/metadata.json",

@@ -54,7 +54,7 @@ class TestMetadataPipeline:
     def test_metadata_pipeline_fetch_token_uri(self, raw_crypto_coven_metadata):
 
         token = Token(
-            chain_identifier="ETHEREUM-MAINNET",
+            chain_identifier="CANTO-MAINNET",
             collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8",
             token_id="1",
         )
@@ -72,7 +72,7 @@ class TestMetadataPipeline:
     def test_metadata_pipeline_fetch_token_metadata(self, raw_crypto_coven_metadata):
 
         token = Token(
-            chain_identifier="ETHEREUM-MAINNET",
+            chain_identifier="CANTO-MAINNET",
             collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8",
             token_id="1",
             uri="ipfs://QmSr3vdMuP2fSxWD7S26KzzBWcAN1eNhm4hk1qaR3x3vmj/1.json",
@@ -152,7 +152,7 @@ class TestMetadataPipeline:
 
     def test_metadata_pipeline_run(self, raw_crypto_coven_metadata):
         token = Token(
-            chain_identifier="ETHEREUM-MAINNET",
+            chain_identifier="CANTO-MAINNET",
             collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8",
             token_id="1",
             uri="ipfs://QmSr3vdMuP2fSxWD7S26KzzBWcAN1eNhm4hk1qaR3x3vmj/1.json",
@@ -234,7 +234,7 @@ class TestMetadataPipeline:
 
     def test_metadata_pipeline_errors_with_no_parser(self):
         token = Token(
-            chain_identifier="ETHEREUM-MAINNET",
+            chain_identifier="CANTO-MAINNET",
             collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8",
             token_id="1",
             uri="ipfs://QmSr3vdMuP2fSxWD7S26KzzBWcAN1eNhm4hk1qaR3x3vmj/1.json",

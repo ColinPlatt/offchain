@@ -14,7 +14,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestLootParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7",
         token_id=345,
         uri=None,
@@ -47,7 +47,7 @@ class TestLootParser:
         metadata = parser.parse_metadata(token=self.token, raw_data=self.raw_data)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0xff9c1b15b16263c61d017ee9f65c50e4ae0113d7",
                 token_id=345,
                 uri="data:application/json;base64,eyJuYW1lIjogIkJhZyAjMzQ1IiwgImRlc2NyaXB0aW9uIjogIkxvb3QgaXMgcmFuZG9taXplZCBhZHZlbnR1cmVyIGdlYXIgZ2VuZXJhdGVkIGFuZCBzdG9yZWQgb24gY2hhaW4uIFN0YXRzLCBpbWFnZXMsIGFuZCBvdGhlciBmdW5jdGlvbmFsaXR5IGFyZSBpbnRlbnRpb25hbGx5IG9taXR0ZWQgZm9yIG90aGVycyB0byBpbnRlcnByZXQuIEZlZWwgZnJlZSB0byB1c2UgTG9vdCBpbiBhbnkgd2F5IHlvdSB3YW50LiIsICJpbWFnZSI6ICJkYXRhOmltYWdlL3N2Zyt4bWw7YmFzZTY0LFBITjJaeUI0Yld4dWN6MGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TUM5emRtY2lJSEJ5WlhObGNuWmxRWE53WldOMFVtRjBhVzg5SW5oTmFXNVpUV2x1SUcxbFpYUWlJSFpwWlhkQ2IzZzlJakFnTUNBek5UQWdNelV3SWo0OGMzUjViR1UrTG1KaGMyVWdleUJtYVd4c09pQjNhR2wwWlRzZ1ptOXVkQzFtWVcxcGJIazZJSE5sY21sbU95Qm1iMjUwTFhOcGVtVTZJREUwY0hnN0lIMDhMM04wZVd4bFBqeHlaV04wSUhkcFpIUm9QU0l4TURBbElpQm9aV2xuYUhROUlqRXdNQ1VpSUdacGJHdzlJbUpzWVdOcklpQXZQangwWlhoMElIZzlJakV3SWlCNVBTSXlNQ0lnWTJ4aGMzTTlJbUpoYzJVaVBsRjFZWEowWlhKemRHRm1aand2ZEdWNGRENDhkR1Y0ZENCNFBTSXhNQ0lnZVQwaU5EQWlJR05zWVhOelBTSmlZWE5sSWo1SVlYSmtJRXhsWVhSb1pYSWdRWEp0YjNJZ2IyWWdRbkpwYkd4cFlXNWpaVHd2ZEdWNGRENDhkR1Y0ZENCNFBTSXhNQ0lnZVQwaU5qQWlJR05zWVhOelBTSmlZWE5sSWo1TWFXNWxiaUJJYjI5a0lHOW1JRkJsY21abFkzUnBiMjQ4TDNSbGVIUStQSFJsZUhRZ2VEMGlNVEFpSUhrOUlqZ3dJaUJqYkdGemN6MGlZbUZ6WlNJK1QzSnVZWFJsSUVKbGJIUThMM1JsZUhRK1BIUmxlSFFnZUQwaU1UQWlJSGs5SWpFd01DSWdZMnhoYzNNOUltSmhjMlVpUGt4bFlYUm9aWElnUW05dmRITWdiMllnVTJ0cGJHdzhMM1JsZUhRK1BIUmxlSFFnZUQwaU1UQWlJSGs5SWpFeU1DSWdZMnhoYzNNOUltSmhjMlVpUGtSeVlXZHZibk5yYVc0Z1IyeHZkbVZ6SUc5bUlFRnVaMlZ5UEM5MFpYaDBQangwWlhoMElIZzlJakV3SWlCNVBTSXhOREFpSUdOc1lYTnpQU0ppWVhObElqNU9aV05yYkdGalpUd3ZkR1Y0ZEQ0OGRHVjRkQ0I0UFNJeE1DSWdlVDBpTVRZd0lpQmpiR0Z6Y3owaVltRnpaU0krVkdsMFlXNXBkVzBnVW1sdVp6d3ZkR1Y0ZEQ0OEwzTjJaejQ9In0=",

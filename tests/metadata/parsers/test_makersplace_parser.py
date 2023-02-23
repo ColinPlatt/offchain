@@ -15,7 +15,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestMakersPlaceParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0x2a46f2ffd99e19a89476e2f62270e0a35bbf0756",
         token_id=68710,
         uri=None,
@@ -84,7 +84,7 @@ class TestMakersPlaceParser:
             token=Token(
                 collection_address="0x2a46f2ffd99e19a89476e2f62270e0a35bbf0756",
                 token_id=68710,
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 uri="https://ipfsgateway.makersplace.com/ipfs/QmSsMzC8zTJvyVJzUifpnBx6zFGFxNvtQVhJq7H8T1oCnr",
             ),
             raw_data={

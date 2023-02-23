@@ -12,7 +12,7 @@ from offchain.metadata.pipelines.metadata_pipeline import MetadataPipeline
 def get_token_metadata(
     collection_address: str,
     token_id: int,
-    chain_identifier: str = "ETHEREUM-MAINNET",
+    chain_identifier: str = "CANTO-MAINNET",
     uri: Optional[str] = None,
 ) -> Union[Metadata, MetadataProcessingError]:
     token = Token(

@@ -16,7 +16,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestAutoglyphsParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0xd4e4078ca3495de5b1d4db434bebc5a986197782",
         token_id=35,
         uri=None,
@@ -46,7 +46,7 @@ class TestAutoglyphsParser:
         metadata = parser.parse_metadata(token=self.token, raw_data=self.raw_data)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0xd4e4078ca3495de5b1d4db434bebc5a986197782",
                 token_id=35,
                 uri=None,

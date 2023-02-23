@@ -18,7 +18,7 @@ from offchain.metadata.parsers.schema.opensea import OpenseaParser
 
 class TestOpenseaParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8",
         token_id="1",
         uri="ipfs://QmSr3vdMuP2fSxWD7S26KzzBWcAN1eNhm4hk1qaR3x3vmj/1.json",
@@ -135,7 +135,7 @@ class TestOpenseaParser:
         fetcher.fetch_mime_type_and_size = MagicMock(return_value=("application/json", "3095"))
         parser = OpenseaParser(fetcher=fetcher)
         token = Token(
-            chain_identifier="ETHEREUM-MAINNET",
+            chain_identifier="CANTO-MAINNET",
             collection_address="0x719c6d392fc659f4fe9b0576cbc46e18939687a7",
             token_id=996,
             uri="ipfs://bafybeighjepdqehd2jq3i3q7363r3o24zcoam62ki5bmp6ddsvzwhnktyu/996",
@@ -143,7 +143,7 @@ class TestOpenseaParser:
         metadata = parser.parse_metadata(token=token, raw_data=self.metadata_with_content_raw)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0x719c6d392fc659f4fe9b0576cbc46e18939687a7",
                 token_id=996,
                 uri="ipfs://bafybeighjepdqehd2jq3i3q7363r3o24zcoam62ki5bmp6ddsvzwhnktyu/996",

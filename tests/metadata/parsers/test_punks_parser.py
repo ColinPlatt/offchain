@@ -16,7 +16,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestPunksParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0xb7f7f6c52f2e2fdb1963eab30438024864c313f6",
         token_id=25,
         uri=None,
@@ -45,7 +45,7 @@ class TestPunksParser:
         metadata = parser.parse_metadata(token=self.token, raw_data=self.raw_data)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0xb7f7f6c52f2e2fdb1963eab30438024864c313f6",
                 token_id=25,
                 uri="https://api.wrappedpunks.com/api/punks/metadata/25",

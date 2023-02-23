@@ -16,7 +16,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestDecentralandParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d",
         token_id=14632141777600353928925108119566033092594,
     )
@@ -50,7 +50,7 @@ class TestDecentralandParser:
         metadata = parser.parse_metadata(token=self.token, raw_data=self.raw_data)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d",
                 token_id=14632141777600353928925108119566033092594,
                 uri="https://api.decentraland.org/v2/contracts/0xf87e31492faf9a91b02ee0deaad50d51d56d5d4d/tokens/14632141777600353928925108119566033092594",

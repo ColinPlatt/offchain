@@ -6,7 +6,7 @@ def test_metadata_processing_error():
     token = Token(
         collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8",
         token_id=9559,
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
     )
 
     metadata_processing_error = MetadataProcessingError(

@@ -36,7 +36,7 @@ This interface is how an NFT is passed into the pipeline for fetching.
 
 - `collection_address`: The token's contract address.
 - `token_id`: The unique identifier for a token within a collection.
-- `chain_identifier`: The network and chain for the token. Defaults to "ETHEREUM-MAINNET" if nothing is passed in.
+- `chain_identifier`: The network and chain for the token. Defaults to "CANTO-MAINNET" if nothing is passed in.
 - `uri`: The url where the metadata lives. Defaults to fetching from the contract directly if nothing is passed in.
 
 ```python
@@ -49,7 +49,7 @@ pipeline = MetadataPipeline()
 token = Token(
     collection_address="0xED5AF388653567Af2F388E6224dC7C4b3241C544",
     token_id=40,
-    chain_identifier="ETHEREUM-MAINNET",
+    chain_identifier="CANTO-MAINNET",
     uri="https://ikzttp.mypinata.cloud/ipfs/QmQFkLSQysj94s5GvTHPyzTxrawwtjgiiYS2TBLgrvw8CW/40"
 )
 

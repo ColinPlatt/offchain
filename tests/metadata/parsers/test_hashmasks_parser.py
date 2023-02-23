@@ -16,7 +16,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestHashmasksParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0xc2c747e0f7004f9e8817db2ca4997657a7746928",
         token_id=553,
     )
@@ -50,7 +50,7 @@ class TestHashmasksParser:
         metadata = parser.parse_metadata(token=self.token, raw_data=self.raw_data)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0xc2c747e0f7004f9e8817db2ca4997657a7746928",
                 token_id=553,
                 uri="https://hashmap.azurewebsites.net/getMask/553",

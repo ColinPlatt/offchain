@@ -15,7 +15,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestZoraParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7",
         token_id=5769,
     )
@@ -42,7 +42,7 @@ class TestZoraParser:
         metadata = parser.parse_metadata(token=self.token, raw_data=self.raw_data)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0xabefbc9fd2f806065b4f3c237d4b59d9a97bcac7",
                 token_id=5769,
                 uri="https://zora-dev.mypinata.cloud/ipfs/bafkreigux6jujn5hvlmptgzgok4reaie2gkuvsk2kynnalsyfgr4g35dkm",

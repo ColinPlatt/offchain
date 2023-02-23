@@ -59,7 +59,7 @@ Let's use the Song a Day collection as an example:
 
 ```python
 Token(
-    chain_identifier="ETHEREUM-MAINNET",
+    chain_identifier="CANTO-MAINNET",
     collection_address="0x19b703f65aa7e1e775bd06c2aa0d0d08c80f1c45",
     token_id=1351,
 )

@@ -16,7 +16,7 @@ from offchain.web3.contract_caller import ContractCaller
 
 class TestArtblocksParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270",
         token_id=265000125,
     )
@@ -91,7 +91,7 @@ class TestArtblocksParser:
         metadata = parser.parse_metadata(token=self.token, raw_data=self.raw_data)
         assert metadata == Metadata(
             token=Token(
-                chain_identifier="ETHEREUM-MAINNET",
+                chain_identifier="CANTO-MAINNET",
                 collection_address="0xa7d8d9ef8d8ce8992df33d8b8cf4aebabd5bd270",
                 token_id=265000125,
                 uri="https://api.artblocks.io/token/265000125",

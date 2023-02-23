@@ -26,7 +26,7 @@ def test_get_token_metadata(mock_fetch_content, mock_fetch_mime_type_and_size, r
             collection_address="0x5180db8f5c931aae63c74266b211f580155ecac8",
             token_id=1,
             uri="ipfs://QmSr3vdMuP2fSxWD7S26KzzBWcAN1eNhm4hk1qaR3x3vmj/1.json",
-            chain_identifier="ETHEREUM-MAINNET",
+            chain_identifier="CANTO-MAINNET",
         ),
         raw_data=raw_crypto_coven_metadata,
         standard=MetadataStandard.OPENSEA_STANDARD,

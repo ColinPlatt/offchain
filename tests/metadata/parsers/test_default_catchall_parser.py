@@ -13,7 +13,7 @@ from offchain.metadata.parsers.catchall.default_catchall import DefaultCatchallP
 
 class TestDefaultCatchallParser:
     token = Token(
-        chain_identifier="ETHEREUM-MAINNET",
+        chain_identifier="CANTO-MAINNET",
         collection_address="0x74cb086a1611cc9ca672f458b7742dd4159ac9db",
         token_id="80071",
         uri="https://api.dego.finance/gego-token-v2/80071",
